@@ -82,8 +82,7 @@
                 updateGauge(ggdl, data[1])
                 updateGauge(ggul, data[2])
                 updateGauge(ggping, data[3])
-                // disabling till alternative IP reporting is found (shows Cloudflare IP)
-                // document.getElementById('ip').textContent = 'Your IP: ' + data[4]
+                document.getElementById('ip').textContent = 'Your IP: ' + data[4]
                 updateGauge(ggjitter, data[5])
             }
             w.postMessage('start {"time_ul": "10", "time_dl": "10", "count_ping": "50", "url_dl": "garbage.php", "url_ul": "empty.php", "url_ping": "empty.php", "url_getIp": "getIP.php"}')
